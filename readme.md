@@ -3,14 +3,8 @@ This repository holds the files from my final project in the General Assembly Pa
 
 #### -- Project Status: Completed
 
-## Project /Objective
+## Project Details
 The purpose of this project is to create a predictive model to apply to basketball matchups and use that model to create a bracket for the NCAA's Men's Basketball Tournament.
-
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
 
 ### Methods Used
 * Exploratory Analysis
@@ -27,23 +21,22 @@ The purpose of this project is to create a predictive model to apply to basketba
   * Random Forest
   * XGBoost
 
-## Project Description
-Project Problem and Hypothesis:
+### Project Problem and Hypothesis:
 * Use historical data and team statistics to predict the outcome of the 2016 NCAA Men’s Basketball Tournament (without peeking)
 * This is a classification problem: win or lose for a given matchup
 * Win probabilities calculated for every potential matchup then used to create bracket
 * Goal is to predict more games than by using seed alone
 
-Feature Creation:
+### Feature Creation:
 * Using win and loss records, iterate through entire data set to create ELO scores for each team
 * Using season level team stats, derive offensive and defensive efficiency stats
 * Merge data, take differences between both teams to create feature set for modeling
 
-Modeling:
+### Modeling:
 * LogisticRegression
 * XGBClassifier
 * DecisionTreeClassifier
 * Random Forest
 
-Results:
+### Results:  
 The Logistic Regression proved to have the best test score and was used for the final bracket prediction. The model ended up with 48 correctly predicted games in the tournament which beat out the "chalk bracket" which had 42 correctly predicted games. It does do better this time, but with so much variance in the college basketball tournament I wouldn't put my life savings on the results of the model.
