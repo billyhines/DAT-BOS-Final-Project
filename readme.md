@@ -39,4 +39,5 @@ The purpose of this project is to create a predictive model to apply to basketba
 * Random Forest
 
 ### Results:  
+![Results Bracket](img/results_bracket.png)
 The Logistic Regression proved to have the best test score and was used for the final bracket prediction. The model ended up with 48 correctly predicted games in the tournament which beat out the "chalk bracket" which had 42 correctly predicted games. It does do better this time, but with so much variance in the college basketball tournament I wouldn't put my life savings on the results of the model.
